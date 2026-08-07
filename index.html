@@ -4,40 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jefrey's Home</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <nav>
             <ul>
-                <li><a href="index.html">Jefrey</a></li>
+                <li><a href="index.html" class="active">Jefrey</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
-        <div class="me">
-            <h1>Jefrey</h1>
-            <p>Jefrey is a 16 year old software and game developer from Germany, he has been coding since I was 12.</p>
-            <img src="./images/pfp.png">
-        </div>
-        <div class="my_hobbies">
-            <h2>My Hobbies</h2>
-            <ul>
-                <li>Language Learning</li>
-                <li>Gym</li>
-                <li>Taekwondo</li>
-                <li>Studying</li>
-            </ul>
-        </div>
-        <div class="my_cats">
-            <h2>My Cats</h2>
-            <div class="Loki">
-                <h3>Loki</h3>
-                <img src="./images/IMG_9095.jpeg" width="300" height="400">
-                <img src="./images/31734078-6e7d-4b5e-9be7-ba802f013654.jpeg" width="300" height="400">
+        <main id="Jefrey">
+            <div class="me">
+                <h1>Jefrey</h1>
+                <p>I'm Jefrey a 16 year old software and game developer from Germany, I've been coding since I was 12.</p>
+                <img src="./images/pfp.png" width="200" length="200">
             </div>
-            <div class="Wanda">
-                <h3>Wanda</h3>
-                <img src="./images/IMG_9094.jpeg" width="300" height="400">
-                <img src="./images/0b9ef9ea-6e7c-476e-bae8-750fb8e1c501.jpeg" width="300" height="400">
+            <div class="hobbies">
+                <h2>My Hobbies</h2>
+                <ul>
+                    <li>Language Learning</li>
+                    <li>Gym</li>
+                    <li>Taekwondo</li>
+                    <li>Studying</li>
+                </ul>
             </div>
-        </div>
+            <div class="cats">
+                <div id="CatHeading">
+                    <h2>My Cats</h2>
+                    <p>These two furballs are twins and were born in february 2025</p>
+                </div>
+                <div class="Cat" id="Loki">
+                    <h3>Loki</h3>
+                    <p>Loki is named after the nordic god Loki, he likes hugging at basically all times of the day</p>
+                    <img src="./images/IMG_9095.jpeg" width="300" height="400">
+                </div>
+                <div class="Cat" id="Wanda">
+                    <h3>Wanda</h3>
+                    <p>Wanda is named after Wandawitch from the MCU, she is a diva, she basically only lets herself be petted by her fave</p>
+                    <img src="./images/IMG_9094.jpeg" width="300" height="400">
+                </div>
+            </div>
+        </main>
     </body>
 </html>
