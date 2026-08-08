@@ -4,6 +4,7 @@
     'Jefrey Hobbies'
     'Cats Cats';
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto auto;
     gap: 10px;
 }
 
@@ -14,7 +15,7 @@
         'image heading'
         'image p';
     column-gap: 10px;
-    background-color: rgb(104, 104, 233);
+    background-color: rgb(227, 247, 158);
     border-radius: 25px;
     text-align: center;
 }
@@ -26,7 +27,7 @@
 .hobbies {
     grid-area: Hobbies;
     display: block;
-    background-color: rgb(24, 182, 24);
+    background-color: rgb(174, 207, 97);
     text-align: center;
     border-radius: 25px;
 }
@@ -43,7 +44,7 @@
     'Loki Wanda';
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     column-gap: 10px;
-    background-color: rgb(145, 74, 74);
+    background-color: rgb(120, 192, 86);
     border-radius: 25px;
 }
 
@@ -55,12 +56,13 @@
 #Loki {
     grid-area: Loki;
     margin-left: 10px;
-    background: grey;
+    background: rgb(182, 216, 87);
 }
 
 #Wanda {
     grid-area: Wanda;
-    background-color: darkgrey;
+    background-color: rgb(230, 250, 139);
+    margin-left: 10px
 }
 
 .Cat {
@@ -70,11 +72,13 @@
     'img p';
     margin-bottom: 10px;
     border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .Cat h3 {grid-area: heading; text-align: center;}
 .Cat p {grid-area: p}
-.Cat img {grid-area: img}
+.Cat img {grid-area: img; border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
 
 @media (max-width: 800px) {
     #Jefrey {
@@ -83,7 +87,6 @@
         'Hobbies'
         'Cats';
     }
-    
 }
 
 @media (max-width: 1000px) {
@@ -105,7 +108,7 @@ nav ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
+    background-color: #255327;
 }
 
 nav li {
@@ -121,9 +124,71 @@ nav li a {
 }
 
 nav ul li a:hover:not(.active) {
-    background-color: #111111;
+    background-color: #1e461e;
 }
 
 nav ul li a.active {
-  background-color: #04AA6D;
+  background-color: #37ad08;
+}
+
+#Projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+}
+
+.Project {
+    width:320px;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-areas: 
+    'Image Image'
+    'Heading Heading'
+    'Text Text'
+    'Link Link';
+    background-color: rgb(120, 192, 86);
+    border-radius: 2px;
+    border-color:#255327;
+    border-style: solid;
+}
+.Project img {
+    border-radius: 2px;
+    border-color:#255327;
+    border-style: solid;
+    grid-area:  Image;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: white;
+} 
+.Project h2 {grid-area: Heading; text-align: center;}
+.Project p {grid-area: Text;}
+.LinkDiv {
+    margin-left: 10px;
+    grid-area: Link;
+    display: grid;
+    grid-template-areas: 'Link1 Link2';
+}
+.Link1 {
+    grid-area: Link1;
+}
+.Link2 {grid-area: Link2}
+
+.Link {
+    width: fit-content;
+    background-color: #255327;
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.Link a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.Link p {
+    margin: 0;
 }
