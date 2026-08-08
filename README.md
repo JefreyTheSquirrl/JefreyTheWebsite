@@ -9,7 +9,9 @@ Try It here: https://jefreythesquirrl.github.io/JefreyTheWebsite/index.html
 
 This project includes:
 -2 pages
+
 -My Projects (with links)
+
 -Adaptability to different screen sizes
 
 How it works:
