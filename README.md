@@ -8,6 +8,7 @@ A Website about me, my projects and my cats.
 Try It here: https://jefreythesquirrl.github.io/JefreyTheWebsite/index.html
 
 This project includes:
+
 -2 pages
 
 -My Projects (with links)
