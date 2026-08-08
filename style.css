@@ -192,3 +192,7 @@ nav ul li a.active {
 .Link p {
     margin: 0;
 }
+
+.MissingLink {
+    padding: 0px;
+}
